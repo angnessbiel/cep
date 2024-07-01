@@ -67,3 +67,19 @@ button:hover {
 p {
   color: #333;
 }
+@media (max-width: 600px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .endereco {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
