@@ -67,6 +67,22 @@ button:hover {
 p {
   color: #333;
 }
+
+.cachorro{
+  font-family: Arial, sans-serif;
+}
+
+.cachorro h1{
+  color: #333;
+
+}
+.cachorro img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+
+}
+
 @media (max-width: 600px) {
   .content {
     padding: 0 20px;
