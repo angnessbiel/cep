@@ -1,19 +1,3 @@
-/* .content{
-  font-family:'open_sansbold', Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: antiquewhite;
-  border-radius: 40px;
-  padding: 50px;
-}
-button{
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-} */
-/* styles.css */
 .content {
   display: flex;
   flex-direction: column;
@@ -44,7 +28,7 @@ button {
 }
 
 button:hover {
-  background-color: #606060;
+  background-color: #4f4f7e;
 }
 
 .endereco {
@@ -56,8 +40,9 @@ button:hover {
   width: 300px;
   text-align: left;
 }
-.endereco h2{
-  font-size:larger;
+
+.endereco h2 {
+  font-size: larger;
 }
 
 .endereco p {
@@ -67,20 +52,85 @@ button:hover {
 p {
   color: #333;
 }
-
-.cachorro{
+body {
   font-family: Arial, sans-serif;
-}
-
-.cachorro h1{
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
   color: #333;
-
 }
-.cachorro img{
-  max-width: 100%;
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cachorro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.cachorro h1 {
+  color: #5a5959;
+}
+
+.cachorro img {
+  width: 100%;
   height: auto;
   border: 1px solid black;
+}
 
+.cachorro button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cachorro button:hover {
+  background-color: #4f4f7e;
+}
+
+.cachorro img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -97,5 +147,23 @@ p {
   .endereco {
     width: 100%;
     padding: 10px 15px;
+  }
+
+  .cachorro {
+    width: 100%;
+    height: auto;
+  }  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .cachorro {
+    margin: 10px;
+    padding: 15px;
   }
 }
