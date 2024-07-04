@@ -24,8 +24,8 @@ export default function FotosCachorro() {
     return (
         <div className="cachorro">
             <h1>Fotos de Cachorro</h1>
-            {cachorro && <img src={cachorro.url} alt="Cachorro" />}
             <button onClick={nextCachorro}>Próximo</button>
+            {cachorro && <img src={cachorro.url} alt="Cachorro" />}
         </div>
     );
 }
